@@ -1,97 +1,97 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:1.2.3'
     }
 }
 apply plugin: 'android'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
-    flavorGroups "suit", "number"
+    flavorDimensions "suit", "number"
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
 
     productFlavors {
 
         //number flavours
         ace {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         two {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         three {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         four {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         five {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         six {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         seven {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         eight {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         nine {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         ten {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         jack {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         queen {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         king {
-            flavorGroup "number"
+            flavorDimension "number"
         }
 
         clubs {
-            flavorGroup "suit"
+            flavorDimension "suit"
         }
 
         spades {
-            flavorGroup "suit"
+            flavorDimension "suit"
         }
 
         diamonds {
-            flavorGroup "suit"
+            flavorDimension "suit"
         }
 
         hearts {
-            flavorGroup "suit"
+            flavorDimension "suit"
         }
     }
 }
